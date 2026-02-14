@@ -11,10 +11,9 @@ import WhatsAppFloat from './components/WhatsAppFloat'
 
 export default function App() {
   const { language } = useLanguage()
-  const isRTL = language === 'he'
 
   return (
-    <div dir={isRTL ? 'rtl' : 'ltr'} className="min-h-screen bg-cream">
+    <div dir={language === 'he' ? 'rtl' : 'ltr'} className="min-h-screen">
       <Navbar />
       <Hero />
       <Gallery />
