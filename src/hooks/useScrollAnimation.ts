@@ -4,20 +4,23 @@ export function useScrollAnimation() {
   const ref = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
+    const el = ref.current
+    if (!el) return
+
     const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible')
-          }
-        })
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          el.classList.remove('section-hidden')
+          el.classList.add('section-visible')
+          // Also trigger stagger children
+          el.querySelectorAll('.stagger').forEach(s => s.classList.add('visible'))
+        }
       },
       { threshold: 0.1 }
     )
 
-    const elements = ref.current?.querySelectorAll('.fade-in-up')
-    elements?.forEach((el) => observer.observe(el))
-
+    el.classList.add('section-hidden')
+    observer.observe(el)
     return () => observer.disconnect()
   }, [])
 
