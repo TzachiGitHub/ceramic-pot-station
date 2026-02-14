@@ -1,9 +1,5 @@
-import { StrictMode } from 'react';
-import { createRoot } from 'react-dom/client';
-import './index.css';
+import { createRoot } from 'react-dom/client'
+import App from './App'
+import './index.css'
 
-createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <div>Ceramic Pot Station — app shell loaded</div>
-  </StrictMode>,
-);
+createRoot(document.getElementById('root')!).render(<App />)
