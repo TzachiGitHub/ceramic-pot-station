@@ -2,7 +2,7 @@ import type { GalleryItem } from '../types';
 
 export const galleryItems: GalleryItem[] = [
   {
-    id: 'mug-forest',
+    id: 'mug-forest', image: 'images/heart-mugs.jpg',
     category: 'mugs',
     titleRu: 'Кружка «Лесная тропа»',
     titleEn: 'Forest Path Mug',
@@ -15,7 +15,7 @@ export const galleryItems: GalleryItem[] = [
     imagePlaceholder: '#5C6B4E',
   },
   {
-    id: 'mug-ocean',
+    id: 'mug-ocean', image: 'images/blue-mugs.jpg',
     category: 'mugs',
     titleRu: 'Кружка «Морская пена»',
     titleEn: 'Sea Foam Mug',
@@ -28,7 +28,7 @@ export const galleryItems: GalleryItem[] = [
     imagePlaceholder: '#6BA3A0',
   },
   {
-    id: 'mug-sunrise',
+    id: 'mug-sunrise', image: 'images/heart-cups.jpg',
     category: 'mugs',
     titleRu: 'Кружка «Рассвет»',
     titleEn: 'Sunrise Mug',
@@ -41,7 +41,7 @@ export const galleryItems: GalleryItem[] = [
     imagePlaceholder: '#C4835A',
   },
   {
-    id: 'bowl-earth',
+    id: 'bowl-earth', image: 'images/leaf-plates.jpg',
     category: 'bowls',
     titleRu: 'Пиала «Земля»',
     titleEn: 'Earth Bowl',
@@ -80,7 +80,7 @@ export const galleryItems: GalleryItem[] = [
     imagePlaceholder: '#8B7355',
   },
   {
-    id: 'vase-minimalist',
+    id: 'vase-minimalist', image: 'images/menorah-pieces.jpg',
     category: 'vases',
     titleRu: 'Ваза «Минимализм»',
     titleEn: 'Minimalist Vase',
@@ -119,7 +119,7 @@ export const galleryItems: GalleryItem[] = [
     imagePlaceholder: '#A8A0C4',
   },
   {
-    id: 'decor-plate',
+    id: 'decor-plate', image: 'images/kiln-trays.jpg',
     category: 'decorative',
     titleRu: 'Декоративная тарелка «Мандала»',
     titleEn: 'Mandala Decorative Plate',
@@ -132,7 +132,7 @@ export const galleryItems: GalleryItem[] = [
     imagePlaceholder: '#B8860B',
   },
   {
-    id: 'decor-figurine',
+    id: 'decor-figurine', image: 'images/star-plates.jpg',
     category: 'decorative',
     titleRu: 'Фигурка «Кот-философ»',
     titleEn: 'Philosopher Cat Figurine',
@@ -145,7 +145,7 @@ export const galleryItems: GalleryItem[] = [
     imagePlaceholder: '#9E8B76',
   },
   {
-    id: 'set-tea',
+    id: 'set-tea', image: 'images/workshop-table.jpg',
     category: 'sets',
     titleRu: 'Чайный набор «Уют»',
     titleEn: 'Cozy Tea Set',
@@ -158,7 +158,7 @@ export const galleryItems: GalleryItem[] = [
     imagePlaceholder: '#A0522D',
   },
   {
-    id: 'set-breakfast',
+    id: 'set-breakfast', image: 'images/studio-interior.jpg',
     category: 'sets',
     titleRu: 'Набор «Завтрак на двоих»',
     titleEn: 'Breakfast for Two Set',

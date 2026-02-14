@@ -25,8 +25,12 @@ export default function About() {
           {/* Photo placeholder — 2 cols */}
           <div className="lg:col-span-2 relative">
             <div className="relative">
-              <div className="w-full aspect-[3/4] rounded-2xl bg-earth-300 flex items-center justify-center">
-                <span className="text-8xl">👩‍🎨</span>
+              <div className="w-full aspect-[3/4] rounded-2xl overflow-hidden">
+                <img
+                  src={`${import.meta.env.BASE_URL}images/studio-interior.jpg`}
+                  alt="Ceramic Pot Station studio"
+                  className="w-full h-full object-cover"
+                />
               </div>
               {/* Decorative offset border */}
               <div className="absolute -bottom-4 -end-4 w-full h-full border-2 border-terracotta rounded-2xl -z-10" />

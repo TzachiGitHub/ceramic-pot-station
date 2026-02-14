@@ -4,6 +4,8 @@ import { galleryItems } from '../data/gallery'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
 import type { Language, Category } from '../types'
 
+const BASE = import.meta.env.BASE_URL
+
 const langSuffix: Record<Language, string> = { ru: 'Ru', en: 'En', he: 'He' }
 function localize(item: Record<string, unknown>, field: string, lang: Language): string {
   return (item[field + langSuffix[lang]] as string) || (item[field + 'En'] as string) || ''
@@ -56,15 +58,25 @@ export default function Gallery() {
           const heights = { mugs: 'h-56', bowls: 'h-48', vases: 'h-72', decorative: 'h-56', sets: 'h-64' }
           return (
             <div key={item.id} className="group relative rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all">
-              {/* Colored placeholder */}
-              <div
-                className={`${heights[item.category]} flex items-center justify-center`}
-                style={{ backgroundColor: item.imagePlaceholder }}
-              >
-                <span className="text-6xl opacity-60 group-hover:scale-110 transition-transform duration-300">
-                  {categoryIcons[item.category]}
-                </span>
-              </div>
+              {/* Image or placeholder */}
+              {item.image ? (
+                <div className={`${heights[item.category]} overflow-hidden`}>
+                  <img
+                    src={`${BASE}${item.image}`}
+                    alt={localize(item as unknown as Record<string, unknown>, 'title', language)}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                </div>
+              ) : (
+                <div
+                  className={`${heights[item.category]} flex items-center justify-center`}
+                  style={{ backgroundColor: item.imagePlaceholder }}
+                >
+                  <span className="text-6xl opacity-60 group-hover:scale-110 transition-transform duration-300">
+                    {categoryIcons[item.category]}
+                  </span>
+                </div>
+              )}
 
               {/* Info bar */}
               <div className="bg-white p-4">

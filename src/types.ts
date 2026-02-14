@@ -12,8 +12,9 @@ export interface GalleryItem {
   descriptionEn: string;
   descriptionHe: string;
   price: number;
-  placeholder: true;
+  placeholder: boolean;
   imagePlaceholder: string;
+  image?: string;
 }
 
 export interface ClassType {
