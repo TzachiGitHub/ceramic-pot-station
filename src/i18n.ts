@@ -128,7 +128,7 @@ const translations: Record<string, Record<Language, string>> = {
   'contact.whatsapp': { ru: 'Написать в WhatsApp', en: 'Message on WhatsApp', he: 'שלחו הודעה בוואטסאפ' },
   'contact.whatsappSub': { ru: 'Обычно отвечаю в течение часа', en: 'Usually reply within an hour', he: 'בדרך כלל עונה תוך שעה' },
   'contact.instagram': { ru: 'Мы в Instagram', en: 'Follow on Instagram', he: 'עקבו באינסטגרם' },
-  'contact.location': { ru: 'Рамат-Ган, Израиль', en: 'Ramat Gan, Israel', he: 'רמת גן, ישראל' },
+  'contact.location': { ru: 'Арлозоров 8, Рамат-Ган', en: '8 Arlozorov St, Ramat Gan', he: 'ארלוזורוב 8, רמת גן' },
   'contact.hours': { ru: 'Время работы', en: 'Working Hours', he: 'שעות פעילות' },
   'contact.hoursDetail': {
     ru: 'Вс–Чт: 10:00–19:00 | Пт: 10:00–14:00',
@@ -136,9 +136,9 @@ const translations: Record<string, Record<Language, string>> = {
     he: 'א׳–ה׳: 10:00–19:00 | ו׳: 10:00–14:00',
   },
   'contact.locationDetail': {
-    ru: 'Студия в самом сердце Рамат-Гана',
-    en: 'Studio in the heart of Ramat Gan',
-    he: 'סטודיו בלב רמת גן',
+    ru: 'Арлозоров 8, Рамат-Ган, Израиль',
+    en: '8 Arlozorov Street, Ramat Gan, Israel',
+    he: 'רחוב ארלוזורוב 8, רמת גן, ישראל',
   },
 
   // Footer
